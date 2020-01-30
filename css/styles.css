@@ -1,0 +1,108 @@
+h1 {
+    font-family: "Lucida Console";
+    color: #28587B;
+}
+
+body {
+  background: #F4F7F7;
+}
+
+.content {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+img.logo {
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bg-primary {
+    background-color: #37392E!important;
+    color: #F4F7F7!important;
+}
+
+a.nav-link {
+  color: #F4F7F7!important;
+}
+
+.active {
+    background-color: #1EBC9C!important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1EBC9C;
+  color: #F4F7F7;
+  text-align: center;
+}
+
+a.footer-link {
+  color: #F4F7F7;
+}
+
+img.banner {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.navbar-light .navbar-toggler {
+    background: #1EBC9C;
+    border-color: #37392E;
+}
+
+img.profile {
+  display: inline-block;
+  float: right;
+  max-width: 50%;
+  max-height: 600px;
+}
+
+.about {
+    display: inline-block;
+    float: left;
+    width: 40%;
+}
+
+/* Image Grid */
+.portfolio {
+  display: grid;
+  grid-template: auto auto auto auto auto / 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.grid-image {
+  max-width: 100%;
+}
+
+.image-grid {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    width: 100%;
+    text-align: center;
+  }
+  img.profile {
+    max-width: 100%;
+    float: none;
+  }
+
+  .portfolio {
+    grid-template: auto auto auto auto auto / 1fr;
+  }
+
+  p {
+    font-size: 150%;
+  }
+}
