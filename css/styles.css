@@ -8,6 +8,20 @@ Mobile design
   float: left;
 }
 
+.style-img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.style {
+  text-align: center;
+}
+
+.image-text {
+    text-align: center;
+}
+
 img.profile {
   max-width: 100%;
   float: none;
@@ -116,5 +130,18 @@ Desktop design
   .about {
       text-align: right;
       width: 40%;
+  }
+
+  .image-text {
+    text-align: left;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .style {
+    text-align: left;
   }
 }
