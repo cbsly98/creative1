@@ -1,10 +1,38 @@
+/*
+Mobile design
+*/
+.about {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+
+img.profile {
+  max-width: 100%;
+  float: none;
+  display: inline-block;
+  max-height: 600px;
+}
+
+.portfolio {
+  grid-template: auto auto auto auto auto / 1fr;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+p {
+  font-size: 150%;
+}
+
 h1 {
     font-family: "Lucida Console";
-    color: #28587B;
+    color: #6088a5;
 }
 
 body {
-  background: #F4F7F7;
+  background: #F9F5FF;
 }
 
 .content {
@@ -21,16 +49,16 @@ img.logo {
 }
 
 .bg-primary {
-    background-color: #37392E!important;
-    color: #F4F7F7!important;
+    background-color: #28262C!important;
+    color: #F9F5FF!important;
 }
 
 a.nav-link {
-  color: #F4F7F7!important;
+  color: #F9F5FF!important;
 }
 
 .active {
-    background-color: #1EBC9C!important;
+    background-color: #edcb48!important;
 }
 
 .footer {
@@ -38,13 +66,13 @@ a.nav-link {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #1EBC9C;
-  color: #F4F7F7;
+  background-color: #edcb48;
+  color: #F9F5FF;
   text-align: center;
 }
 
 a.footer-link {
-  color: #F4F7F7;
+  color: #F9F5FF;
 }
 
 img.banner {
@@ -54,29 +82,8 @@ img.banner {
 }
 
 .navbar-light .navbar-toggler {
-    background: #1EBC9C;
-    border-color: #37392E;
-}
-
-img.profile {
-  display: inline-block;
-  float: right;
-  max-width: 50%;
-  max-height: 600px;
-}
-
-.about {
-    display: inline-block;
-    float: left;
-    width: 40%;
-}
-
-/* Image Grid */
-.portfolio {
-  display: grid;
-  grid-template: auto auto auto auto auto / 1fr 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+    background: #edcb48;
+    border-color: #28262C;
 }
 
 .grid-image {
@@ -88,21 +95,26 @@ img.profile {
     max-height: 500px;
 }
 
-@media only screen and (max-width: 600px) {
-  .about {
-    width: 100%;
-    text-align: center;
-  }
-  img.profile {
-    max-width: 100%;
-    float: none;
-  }
-
-  .portfolio {
-    grid-template: auto auto auto auto auto / 1fr;
-  }
-
+/*
+Desktop design
+*/
+@media only screen and (min-width: 601px) {
   p {
-    font-size: 150%;
+    font-size: 100%;
+  }
+
+  /* Image Grid */
+  .portfolio {
+    grid-template: auto auto auto auto auto / 1fr 1fr;
+  }
+
+  img.profile {
+    float: right;
+    max-width: 50%;
+  }
+
+  .about {
+      text-align: right;
+      width: 40%;
   }
 }
