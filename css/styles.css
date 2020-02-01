@@ -1,6 +1,10 @@
 /*
 Mobile design
 */
+p.homepage {
+    font-size: xx-large;
+}
+
 .about {
   width: 100%;
   text-align: center;
@@ -109,12 +113,42 @@ img.banner {
     max-height: 500px;
 }
 
+/*desktop, not tablet*/
+@media only screen and (min-width: 801px) {
+  .style {
+    text-align: left;
+  }
+
+  .style-img {
+    max-width: 300px;
+    display: inline-block;
+    margin: 20px;
+  }
+
+  #blindfold {
+    max-height: 180px;
+  }
+
+  .section {
+    height: fit-content;
+    display: flex;
+  }
+
+  .style-text {
+    max-width: 400px;
+    margin: auto;
+}
+  h2 {
+    padding-top: 40px;
+  }
+}
+
 /*
 Desktop design
 */
 @media only screen and (min-width: 601px) {
   p {
-    font-size: 100%;
+    font-size: 120%;
   }
 
   /* Image Grid */
@@ -141,7 +175,5 @@ Desktop design
     transform: translate(-50%, -50%);
   }
 
-  .style {
-    text-align: left;
-  }
+
 }
