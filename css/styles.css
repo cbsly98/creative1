@@ -19,9 +19,7 @@ p.homepage {
 }
 
 .erno {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: auto;
 }
 
 .style {
@@ -181,5 +179,10 @@ Desktop design
     transform: translate(-50%, -50%);
   }
 
+  .erno {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
 
 }
