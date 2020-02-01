@@ -18,6 +18,12 @@ p.homepage {
   width: 80%;
 }
 
+.erno {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 .style {
   text-align: center;
 }
